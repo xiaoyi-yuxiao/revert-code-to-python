@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 N=1000
 
 def PsudoRand(mu,sigma,N,size,number_of_sample):
-    psudo = np.random.uniform(mu,sigma,N)#generate a thousand unidform random number from uniform distribution
+    psudo = np.random.normal(mu,sigma,N)#generate a thousand unidform random number from uniform distribution
     choice = np.random.choice(psudo, (size,number_of_sample))#choose 5 number from Rsudo without replacement
     return choice
 
